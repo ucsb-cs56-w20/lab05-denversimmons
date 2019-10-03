@@ -1,4 +1,4 @@
-# Starter Code for cs56 lab04, f18
+# Starter Code for cs56 lab03, f19
 
-* <https://ucsb-cs56-f18.github.io/lab/lab04/>
+* <https://ucsb-cs56-f19.github.io/lab/lab03/>
 
