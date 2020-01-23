@@ -16,15 +16,17 @@ public class MenuItem {
 
 
     public MenuItem(String name, int priceInCents, String category) {
-        // stub
+        this.name = name;
+	this.priceInCents = priceInCents;
+	this.category = category;
     }
 
     public String getCategory(){
-	return "stub";
+	return category;
     }
 
     public String getName(){
-	return "stub";
+	return name;
     }
     /**
      * Returns the price, formatted as a string with a $.
@@ -32,7 +34,7 @@ public class MenuItem {
      */
 
     public String getPrice() {
-        return "stub";
+        return "$" + (priceInCents / 100) + "." + priceInCents % 100;
     }
 
     /**
@@ -46,11 +48,19 @@ public class MenuItem {
      */
 
     public String getPrice(int width) {
-        return "stub";
+	if(width < 6){
+	    throw new TooNarrowException();
+	}
+	width -= getPrice().length();
+	String result = "";
+	for(int i = 0; i < width; i++){
+	    result += " ";
+	}
+	return result + getPrice();
     }
 
     public int getPriceInCents(){
-	return -1;
+	return priceInCents;
     }
     /**
      * return a string in csv format, in the order name,price,cateogry.
@@ -61,7 +71,7 @@ public class MenuItem {
 
     @Override
     public String toString() {
-        return "stub";
+        return name + "," + priceInCents + "," + category;
     }
 
 }

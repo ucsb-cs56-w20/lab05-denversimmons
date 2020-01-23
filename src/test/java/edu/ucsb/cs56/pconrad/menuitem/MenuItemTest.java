@@ -54,7 +54,7 @@ public class MenuItemTest {
 
     @Test
     public void test_getPrice_15_Drink(){
-	assertEquals("               $1.49", soda.getPrice(15));
+	assertEquals("          $1.49", soda.getPrice(15));
     }
 
     @Test
@@ -63,8 +63,8 @@ public class MenuItemTest {
     }
 
     @Test
-    public void test_getPrice_5_Drink(){
-	assertEquals("     $1.49", soda.getPrice(5));
+    public void test_getPrice_9_Drink(){
+	assertEquals("    $1.49", soda.getPrice(9));
     }
 
     @Test
@@ -74,7 +74,7 @@ public class MenuItemTest {
 
     @Test
     public void test_getPrice_20_Drink(){
-	assertEquals("                    $1.49", soda.getPrice(20));
+	assertEquals("               $1.49", soda.getPrice(20));
     }
 
     @Test(expected = MenuItem.TooNarrowException.class)
