@@ -19,6 +19,13 @@ public class MenuItem {
         // stub
     }
 
+    public String getCategory(){
+	return "stub";
+    }
+
+    public String getName(){
+	return "stub";
+    }
     /**
      * Returns the price, formatted as a string with a $.
      * For example "$0.99", "$10.99", or "$3.50"
@@ -42,6 +49,9 @@ public class MenuItem {
         return "stub";
     }
 
+    public int getPriceInCents(){
+	return -1;
+    }
     /**
      * return a string in csv format, in the order name,price,cateogry.
      * For example <code>Small Poke Bowl,1049,Poke Bowls</code>
