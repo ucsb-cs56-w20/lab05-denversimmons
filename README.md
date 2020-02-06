@@ -1,6 +1,6 @@
 Denver Simmons
 
-javadoc: 
+javadoc: https://ucsb-cs56-w20.github.io/lab05-denversimmons/
 
 # Starter Code for cs56 lab03, f19
 
